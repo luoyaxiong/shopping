@@ -1,4 +1,130 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tomleg');
+    src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+      url('../fonts/icomoon.woff?tomleg') format('woff'),
+      url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
 .w {
     width: 1200px;
     margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.spell_red {
+    color: #c81623;
+}
+.shortcut {
+    height: 31px;
+    line-height: 31px;
+    background-color: #f1f1f1;
+}
+.shortcut ul li {
+    float: left;
+}
+.shortcut .fr ul li:nth-child(2n) {
+    width: 1px;
+    height: 12px;
+    margin: 0 15px;
+}
+.arrow-icon::after{
+    content: "\e91e";
+    margin-left: 6px;
+    font-family: 'icomoon';
+}
+.header {
+    position: relative;
+    height: 105px;
+    /* background-color: pink; */
+}
+.logo {
+    position: absolute;
+    top: 25px;
+    width: 170px;
+    height: 60px;
+}
+.logo a {
+    display: block;
+    font-size: 0;
+    width: 170px;
+    height: 60px;
+    background: url("../images/logo.png");
+}
+.search {
+    position: absolute;
+    top: 25px;
+    left: 345px;
+    width: 538px;
+    height: 37px;
+    float: left;
+    border: 2px solid #b1191a;
+}
+.search input {
+    float: left;
+    width: 454px;
+    height: 33px;
+    padding-left:10px;
+}
+.search button {
+    float: left;
+    width: 80px;
+    height: 35px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #b1191a;
+}
+.hotwords {
+    position: absolute;
+    top: 62px;
+    left: 345px;
+    height: 32px;
+    /* background-color: #ccc; */
+}
+.hotwords a {
+    float: left;
+    font-size: 12px;
+    line-height: 32px;
+    margin: 0px 14px;
+}
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 65px;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border: 1px solid #dfdfdf;
+}
+.shopcar::before {
+    content: "\e93a";
+    color: #b1191a;
+    margin-right: 5px;
+    font-family: 'icomoon';
+}
+.shopcar::after {
+    content: "\e920";
+    margin-left: 10px;
+    font-family: 'icomoon';
+}
+.shopcar .count {
+    position: absolute;
+    top: -5px;
+    left: 105px;
+    height: 14px;
+    line-height: 14px;
+    color: #fff;
+    padding: 0 5px;
+    background-color: #c81623;
+    border: 1px solid ;
+    border-radius: 7px 7px 7px 0;
 }
