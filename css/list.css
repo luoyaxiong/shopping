@@ -5,3 +5,49 @@
     border-left: 2px solid #b1191a;
     padding: 3px 0px 0px 14px;
 }
+.sk_list {
+    float: left;
+}
+.sk_list ul li {
+    float: left;
+}
+.sk_list ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+.sk_con {
+    float: left;
+}
+.sk_con ul li {
+    float: left;
+}
+.sk_con ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 20px;
+    font-size: 13px;
+}
+.sk_con ul li:last-child  a::afters{
+    content: "\e91e";
+    font-family: 'icomoon';
+}
+.sk_bd ul li {
+    overflow: hidden;
+    float: left;
+    margin-right: 13px;
+    width: 290px;
+    height: 460px;
+    border: 1px solid transparent;
+}
+.sk_bd ul li:nth-child(4n) {
+    margin-right: 0px;
+}
+.sk_bd ul li:hover{
+    width: 290px;
+    height: 460px;
+    border-color:  #b1191a;
+}
