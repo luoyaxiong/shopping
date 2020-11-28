@@ -1,0 +1,98 @@
+.header {
+    border-bottom: 2px solid #b1191a;
+}
+.area {
+    height: 522px;
+    margin-top: 20px;
+}
+.area h3 {
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    padding: 0 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+}
+.area .login {
+    float: right;
+    font-size: 12px;
+}
+.reg_form {
+    width: 600px;
+    margin:  50px auto 0;
+}
+.reg_form ul li {
+    margin-bottom: 20px;
+}
+.reg_form ul li label {
+    display: inline-block;
+    margin-right: 5px;
+    width: 88px;
+    text-align: right;
+}
+.reg_form ul li input[type='text'],
+.reg_form ul li input[type='password'] {
+    width: 242px;
+    height: 37px;
+    border: 1px solid #ccc;
+}
+.reg_form ul li span {
+    margin-left: 10px;
+}
+.error {
+    color: #b1191a;
+}
+.error .error_icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/error.png) no-repeat;
+    vertical-align: middle;
+}
+.success {
+    color: green;
+}
+.success .success_icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/success.png) no-repeat;
+    vertical-align: middle;
+}
+.safe {
+    padding-left: 165px;
+}
+.safe em {
+    padding: 0 12px;
+    margin: 0 2px;
+    color: #fff;
+
+}
+.ruo {
+    background-color:#de1111 ;
+}
+.zhong {
+    background: #40683f;
+}
+.qiang {
+    background: #f79100;
+}
+.agree {
+    padding-left: 95px;
+}
+.agree a {
+    color: #1ba1e6;
+}
+.agree input {
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.btn {
+    width: 248px;
+    height: 34px;
+    margin-left: 90px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #de1111;
+}
