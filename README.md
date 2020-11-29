@@ -9,4 +9,4 @@
 
  register.html : Registration page
 
- Dem0 :  https://luoyaxiong.github.io/shopping/
+ Demo:  https://luoyaxiong.github.io/shopping/
