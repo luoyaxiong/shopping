@@ -33,21 +33,13 @@ for (let i = 0; i < ul.children.length; i++) {
 
         // 移动到相应的图片
         // ul 移动的距离是index* 照片的长度
-        // var index = this.getAttribute('index')
-        // var target = -index*focus.offsetWidth
-        // animate(ul, target)
+        var index = this.getAttribute('index')
+        var target = -index*focus.offsetWidth
+        animate(ul, target)
 
     } )
 }
 ol.children[0].className = 'current'
-
-// 点击circle swiper 滑动到相应的图片
-
-// for (let i = 0; i < ol.children.length; i++) {
-//     // const element = ol[i];
-    
-// }
-
 
 function animate(obj, target, callback) {
     clearInterval(obj.timer)
