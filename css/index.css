@@ -4,42 +4,108 @@
     margin-left: 220px;
     margin-top: 10px;
 }
+
 .focus {
+    position: relative;
+    overflow: hidden;
     float: left;
     width: 721px;
     height: 455px;
     background-color: #bb5bbb;
 }
+
+.focus ul {
+    position: absolute;
+    width: 600%
+}
+
+.focus ul li {
+    float: left;
+}
+
+.focus a {
+    display: none;
+    position: absolute;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    transform: translateY(-50%);
+    z-index: 99;
+    color: #ccc;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.focus .arrow-l {
+    left: 0;
+
+}
+
+.focus .arrow-r {
+    right: 0;
+
+}
+
+.circle {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.circle li {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border-radius: 30px;
+    border: .1px solid #ccc;
+}
+
+.current {
+    background-color: #ccc;
+}
+
 .newsflash {
     float: right;
     width: 250px;
     height: 455px;
 }
+
 .news {
     height: 165px;
     border: 1px dotted #e4e4e4;
 }
+
 .new_hd {
     height: 33px;
     padding: 0 15px;
     line-height: 33px;
     border-bottom: 1px dotted #e4e4e4;
 }
+
 .new_hd h5 {
     float: left;
     font-size: 14px;
 }
+
 .new_hd .more {
     float: right;
 }
+
 .new_hd .more::after {
     content: "\e920";
     font-family: 'icomoon';
 
 }
+
 .new_bd {
-    margin: 7px 15px ;
+    margin: 7px 15px;
 }
+
 .new_bd ul li {
     height: 24px;
     font-size: 13px;
@@ -49,36 +115,43 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-.lifeservice{
+
+.lifeservice {
     overflow: hidden;
     height: 209px;
     border: 1px dotted #e4e4e4;
     border-top: none;
 }
+
 .lifeservice ul {
     width: 252px;
 }
-.lifeservice ul li{
+
+.lifeservice ul li {
     float: left;
     width: 63px;
     height: 71px;
     border-right: 1px dotted #e4e4e4;
     border-bottom: 1px dotted #e4e4e4;
 }
-.lifeservice ul li a i{
+
+.lifeservice ul li a i {
     display: inline-block;
     margin: 12px 0px 0px 0px;
     width: 22px;
     height: 26px;
     background: url(../images/icons.png) no-repeat -19px -15px;
 }
-.lifeservice ul li a{
+
+.lifeservice ul li a {
     display: block;
     text-align: center;
 }
+
 .ad {
     height: 79px;
 }
+
 .ad a {
     display: block;
     height: 100%;
@@ -91,6 +164,7 @@
     margin-top: 12px;
     background-color: #ebebeb;
 }
+
 .recom_hd {
     float: left;
     width: 206px;
@@ -98,17 +172,21 @@
     line-height: 106px;
     text-align: center;
 }
+
 .recom_bd {
     float: left;
 }
+
 .recom_bd ul li {
     position: relative;
     float: left;
 }
+
 .recom_bd ul li img {
     width: 248px;
     height: 163px;
 }
+
 .recom_bd ul li:nth-child(-n+3)::after {
     position: absolute;
     top: 10px;
@@ -124,7 +202,8 @@
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.hd{
+
+.hd {
     height: 30px;
     line-height: 30px;
     border-bottom: 2px solid #b1191a;
@@ -137,28 +216,35 @@
     font-size: 400;
     color: #b1191a;
 }
+
 .tab_list {
     float: right;
 }
+
 .tab_list ul li {
     float: left;
 }
+
 .tab_list ul li a {
     float: left;
     padding: 0 15px;
 }
+
 .bd {
     height: 361px;
 }
+
 .tab_list_item div {
     float: left;
 
 }
+
 .col_210 {
     width: 210px;
     text-align: center;
     background-color: #fff;
 }
+
 .col_210 ul li {
     float: left;
     width: 82px;
@@ -167,21 +253,26 @@
     margin-left: 15px;
     border-bottom: 1px dotted #e4e4e4;
 }
+
 .col_210 ul li a {
     display: block;
     padding: 0 10px;
 }
+
 .col_329 {
     width: 329px;
 }
+
 .col_221 {
     width: 221px;
     border-right: 1px dotted #e4e4e4;
 }
+
 .col_219 {
     width: 209px;
 }
-.bb{
+
+.bb {
     display: block;
     padding-bottom: 5px;
     border-bottom: 1px dotted #e4e4e4;
