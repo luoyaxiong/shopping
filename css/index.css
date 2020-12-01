@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .main {
     width: 980px;
     height: 455px;
@@ -16,6 +21,9 @@
 
 .focus ul {
     position: absolute;
+    float: left;
+    top: 0;
+    left: 0;
     width: 600%
 }
 

@@ -3,7 +3,7 @@ var arrowL = document.querySelector('.arrow-l')
 var arrowR = document.querySelector('.arrow-r')
 var circle = document.querySelector('.circle')
 var focusWidth = focus.offsetWidth
-
+console.log(focusWidth)
 // 设置自动点击arrow
 var timer = setInterval(() => {
     arrowR.click()
@@ -129,20 +129,23 @@ function circleChange() {
 
 
 function animate(obj, target, callback) {
+
     clearInterval(obj.timer)
     obj.timer = setInterval(() => {
-        // var currentLocation = obj.offsetLeft;
+
         var step = (target - obj.offsetLeft) / 10;
         step = step > 0 ? Math.ceil(step) : Math.floor(step)
-
-        if (obj.offsetLeft == target) {
+        // console.log(obj.offsetLeft)
+        // console.log(step)
+        // console.log(obj.offsetLeft + step)
+        // console.log('******')
+        if (obj.offsetLeft === target) {
+            console.log('here')
             clearInterval(obj.timer)
-            // callback && callback()
             if (callback) {
-                callback();
+                callback()
             }
         }
         obj.style.left = obj.offsetLeft + step + 'px'
-
-    }, 15);
+    }, 30);
 }
