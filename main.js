@@ -5,7 +5,6 @@ var circle = document.querySelector('.circle')
 
 // 当focus鼠标划入时， arrow出现
 focus.addEventListener('mouseenter', function () {
-    console.log('enter')
     arrowL.style.display = 'block';
     arrowR.style.display = 'block';
 })
@@ -41,6 +40,65 @@ for (let i = 0; i < ul.children.length; i++) {
 }
 ol.children[0].className = 'current'
 
+// clone 第一张 照片到ul最后
+var imgCopy = ul.children[0].cloneNode(true) 
+ul.appendChild(imgCopy)
+
+var num = 0;
+var circle = 0;
+// 点击arrow-r 可以滚动 
+arrowR.addEventListener('click', function () {
+    
+    if (num === ul.children.length-1) { 
+        ul.style.left = 0
+        num = 0
+    }
+    num++;
+    circle++;
+    animate(ul, -num * focus.offsetWidth)
+
+
+    // circle 和 arrow的点击事件对应
+    // 多命名一个circle变量记录
+    if (circle === ol.children.length) {
+        circle = 0 
+    }
+    for (let i = 0; i < ol.children.length; i++){
+        ol.children[i].className = ''
+    }
+    ol.children[circle].className = 'current'
+    
+})
+
+// 点击arrow-l 可以滚动
+arrowL.addEventListener('click', function () {
+    
+    if (num === 0) { 
+        ul.style.right = 0
+        num = ul.children.length-1
+    }
+    num--;
+    circle--;
+    animate(ul, -num * focus.offsetWidth)
+
+
+    // circle 和 arrow的点击事件对应
+    // 多命名一个circle变量记录
+    if (circle === -1) {
+        circle = ol.children.length - 1
+    }
+    for (let i = 0; i < ol.children.length; i++){
+        ol.children[i].className = ''
+    }
+    ol.children[circle].className = 'current'
+    
+})
+
+setInterval(() => {
+    arrowR.click()
+}, 3000);
+
+// animate
 function animate(obj, target, callback) {
     clearInterval(obj.timer)
     obj.timer = setInterval(() => {
