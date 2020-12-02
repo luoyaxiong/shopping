@@ -77,9 +77,7 @@ arrowR.addEventListener('click', function () {
     }
     num++;
     circle++;
-    animate(ul, -num * focus.offsetWidth, function () {
-        console.log('here')
-    })
+    animate(ul, -num * focus.offsetWidth, function () {})
 
     // circle 和 arrow的点击事件对应
     // 多命名一个circle变量记录s
@@ -135,12 +133,7 @@ function animate(obj, target, callback) {
 
         var step = (target - obj.offsetLeft) / 10;
         step = step > 0 ? Math.ceil(step) : Math.floor(step)
-        // console.log(obj.offsetLeft)
-        // console.log(step)
-        // console.log(obj.offsetLeft + step)
-        // console.log('******')
         if (obj.offsetLeft === target) {
-            console.log('here')
             clearInterval(obj.timer)
             if (callback) {
                 callback()
